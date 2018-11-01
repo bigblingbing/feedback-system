@@ -1,0 +1,75 @@
+.left {
+  background-color: #4285f4;
+  margin-top: 100px;
+  color: white;
+  margin-right: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.right {
+  background-color: #fbbc05;
+  color: white;
+  margin-top: 100px;
+  margin-left: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding-bottom: 30px;
+}
+
+.icon {
+  padding-top: 40px;
+}
+
+
+
+.bold {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: double;
+  margin: 40px;
+}
+
+.submit button{
+  background: none;
+  border: none;
+  height: 70px;
+  width: 70px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 50%;
+  margin-bottom: 15px;
+  color: #4285F4;
+  align-self: center;
+  background-color: white;
+}
+
+.submit1 button{
+  background: none;
+  border: none;
+  height: 70px;
+  width: 70px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 50%;
+  margin-bottom: 15px;
+  color: #4285F4;
+  align-self: center;
+  background-color: white;
+  color: #fbbc05;
+}
+
+@media (max-width: 576px) {
+  .left {
+    background-color: #4285f4;
+    margin-top: 100px;
+    color: white;
+    margin: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .right {
+    background-color: #fbbc05;
+    color: white;
+    margin-top: 100px;
+    margin: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding-bottom: 30px;
+  }
+}

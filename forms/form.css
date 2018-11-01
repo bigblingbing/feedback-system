@@ -1,0 +1,80 @@
+body{
+  font-family: 'Nunito', sans-serif;
+/*  background-color: #ea4335;*/
+}
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.box{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin:30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+/* Hide the browser's default radio button */
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark {
+    background-color: #ccc;
+    transition: 0.3s ease-in;
+
+}
+
+/* When the radio button is checked, add a blue background */
+.container1 input:checked ~ .checkmark {
+    background-color: #2196F3;
+    transition: 0.3s ease-in;
+}
+
+.nav{
+  margin: 20px;
+  display: flex;
+}
+
+.left{
+  color: #4285F4;
+}
+
+.right{
+margin-left: auto;
+color: #4285F4;
+}
+
+.submit button{
+  background: none;
+  border: none;
+  height: 70px;
+  width: 70px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 50%;
+  margin-bottom: 15px;
+  color: #4285F4;
+  align-self: center;
+}
