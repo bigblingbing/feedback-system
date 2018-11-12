@@ -31,23 +31,33 @@
             <h2 class="right"><i class="fa fa-sign-out" aria-hidden="true"></i></h2>
           </div>
 
-          <form>
+          <form method="post" action="form-store.php">
+            <div class="row">
+              <div class="col-md-4 ml-auto mr-auto col-sm-12">
+                <div class="md-form" id="name">
+                  <i class="fa fa-user prefix"></i>
+                  <input type="text" id="inputIconEx2" class="form-control" name="name">
+                  <label for="inputIconEx2">Enter your name</label>
+                </div>
+              </div>
+            </div>
+
             <div class="box" id="box1">
               <p>1) Select the choice you want for this question</p>
               <label class="container1">One
-                <input type="radio" name="radio1">
+                <input type="radio" value="xyz" name="radio1">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" name="radio1">
+                <input type="radio" value="xyz" name="radio1">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" name="radio1">
+                <input type="radio" value="xyz" name="radio1">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" name="radio1">
+                <input type="radio" value="xyz" name="radio1">
                 <span class="checkmark"></span>
               </label>
             </div>
@@ -55,19 +65,19 @@
             <div class="box" id="box2">
               <p>2) Select the choice you want for this question</p>
               <label class="container1">One
-                <input type="radio" name="radio2">
+                <input type="radio" value="xyz" name="radio2">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" name="radio2">
+                <input type="radio" value="xyz" name="radio2">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" name="radio2">
+                <input type="radio" value="xyz" name="radio2">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" name="radio2">
+                <input type="radio" value="xyz" name="radio2">
                 <span class="checkmark"></span>
               </label>
             </div>
@@ -75,19 +85,19 @@
             <div class="box" id="box3">
               <p>3) Select the choice you want for this question</p>
               <label class="container1">One
-                <input type="radio" name="radio3">
+                <input type="radio" value="xyz" name="radio3">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" name="radio3">
+                <input type="radio" value="xyz" name="radio3">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" name="radio3">
+                <input type="radio" value="xyz" name="radio3">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" name="radio3">
+                <input type="radio" value="xyz" name="radio3">
                 <span class="checkmark"></span>
               </label>
             </div>
@@ -95,19 +105,19 @@
             <div class="box" id="box4">
               <p>4) Select the choice you want for this question</p>
               <label class="container1">One
-                <input type="radio" name="radio4">
+                <input type="radio" value="xyz" name="radio4">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" name="radio4">
+                <input type="radio" value="xyz" name="radio4">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" name="radio4">
+                <input type="radio" value="xyz" name="radio4">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" name="radio4">
+                <input type="radio" value="xyz" name="radio4">
                 <span class="checkmark"></span>
               </label>
             </div>
@@ -115,33 +125,33 @@
             <div class="box" id="box5">
               <p>5) Select the choice you want for this question</p>
               <label class="container1">One
-                <input type="radio" name="radio5">
+                <input type="radio" value="xyz" name="radio5">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" name="radio5">
+                <input type="radio" value="xyz" name="radio5">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" name="radio5">
+                <input type="radio" value="xyz" name="radio5">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" name="radio5">
+                <input type="radio" value="xyz" name="radio5">
                 <span class="checkmark"></span>
               </label>
             </div>
 
             <div class="box">6) Have some other issues?
               <div class="md-form">
-                <textarea type="text" id="form7" class="md-textarea form-control" rows="3"></textarea>
+                <textarea type="text" id="form7" class="md-textarea form-control" rows="3" name="review"></textarea>
                 <label for="form7">Some extra reviews?</label>
               </div>
             </div>
 
             <center>
               <span class="submit"><button class="btn-floating btn-sm btn-tw" type="submit"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
-              </button></span>
+                </button></span>
             </center>
 
           </form>
