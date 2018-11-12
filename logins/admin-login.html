@@ -34,18 +34,18 @@
         <div id="heading">
           <h3>Login</h3>
         </div>
-        <form>
+        <form method="post" action="admin.php">
           <div id="form-body">
 
             <div class="md-form">
               <i class="fa fa-user prefix"></i>
-              <input type="text" id="inputIconEx2" class="form-control">
+              <input type="text" id="inputIconEx2" class="form-control" name="name">
               <label for="inputIconEx2">E-mail address</label>
             </div>
 
             <div class="md-form">
               <i class="fa fa-lock prefix"></i>
-              <input type="password" id="inputValidationEx2" class="form-control validate">
+              <input type="password" id="inputValidationEx2" class="form-control validate" name="pass">
               <label for="inputValidationEx2" data-error="wrong" data-success="right">Type your password</label>
             </div>
 
