@@ -41,8 +41,9 @@ echo $result;
 
        if(!$result){
            echo "<div>";
-           echo "noy";
+           echo "<script>alert("."database is currently down".")</script>";
            echo "</div>";
+           header('Location: form.html')
        }
        else {
            // *** My PERSONAL preference is to use {} every where, it just makes it easier if you add

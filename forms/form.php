@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php   session_start();  ?>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,8 +19,18 @@
 </head>
 
 <body>
+  <?php
+        if(!isset($_SESSION['use'])) // If session is not set then redirect to Login Page
+         {
+             header("Location:../logins/student-login.php");
+         }
 
-  <!-- Start your project here-->
+            echo $_SESSION['use'];
+
+            echo "Login Success";
+
+            echo "<a href='logout.php'> Logout</a> ";
+  ?>
 
   <div class="container">
     <div class="row">
@@ -28,7 +38,7 @@
         <div class="main-form">
           <div class="nav">
             <h2 class="left">Feedback Form</h2>
-            <h2 class="right"><i class="fa fa-sign-out" aria-hidden="true"></i></h2>
+            <h2 class="right"><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a></h2>
           </div>
 
           <form method="post" action="form-store.php">

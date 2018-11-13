@@ -1,3 +1,5 @@
+<?php  session_start(); ?>  // session starts with the help of this function
+
 <?php
 $servername="localhost";
 $username="root";
@@ -11,7 +13,11 @@ if(!$connect)
 else
     echo"connected";
 
-
+if(isset($_SESSION['use']))   // Checking whether the session is already there or not if
+                                      // true then header redirect it to the home page directly
+         {
+            header("Location:result.php");
+         }
 $name=$_POST["name"];
 $pass=$_POST["pass"];
 
@@ -21,6 +27,7 @@ $query = "SELECT id FROM admin WHERE id = '$name' AND password = '$pass'";// AND
 
 $result = $connect->query($query);
 
+$_SESSION['use']=$name;
 
 
 /*
@@ -42,7 +49,7 @@ $row = mysqli_fetch_array($result);
            // code into the condition later
            echo "loggedin";
            $loggedIn = true;
-           header('Location: result.html');
+           header('Location: result.php');
            exit;
        }
 
