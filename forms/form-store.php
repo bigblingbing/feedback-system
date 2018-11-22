@@ -43,15 +43,16 @@ echo $result;
            echo "<div>";
            echo "<script>alert("."database is currently down".")</script>";
            echo "</div>";
-           header('Location: form.html')
+           header('Location: form.html');
        }
        else {
+         $message="Submission Sucessful";
            // *** My PERSONAL preference is to use {} every where, it just makes it easier if you add
            // code into the condition later
-           echo "thank you";
+           echo "<script>alert("."Submitted Sucessfully".")</script>";
            $loggedIn = true;
-           //header('Location: result.html');
-           //exit;
+           header('Location: ../index.html');
+           exit;
        }
 
 
