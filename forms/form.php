@@ -53,101 +53,101 @@
             </div>
 
             <div class="box" id="box1">
-              <p>1) Select the choice you want for this question</p>
+              <p>1) Please rate College Library facilities</p>
               <label class="container1">One
-                <input type="radio" value="xyz" name="radio1">
+                <input type="radio" value="One" name="radio1">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" value="xyz" name="radio1">
+                <input type="radio" value="Two" name="radio1">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" value="xyz" name="radio1">
+                <input type="radio" value="Three" name="radio1">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" value="xyz" name="radio1">
+                <input type="radio" value="Four" name="radio1">
                 <span class="checkmark"></span>
               </label>
             </div>
 
             <div class="box" id="box2">
-              <p>2) Select the choice you want for this question</p>
+              <p>2) Please rate College Lab facilities</p>
               <label class="container1">One
-                <input type="radio" value="xyz" name="radio2">
+                <input type="radio" value="One" name="radio2">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" value="xyz" name="radio2">
+                <input type="radio" value="Two" name="radio2">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" value="xyz" name="radio2">
+                <input type="radio" value="Three" name="radio2">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" value="xyz" name="radio2">
+                <input type="radio" value="Four" name="radio2">
                 <span class="checkmark"></span>
               </label>
             </div>
 
             <div class="box" id="box3">
-              <p>3) Select the choice you want for this question</p>
+              <p>3) Please rate College Internet facilities</p>
               <label class="container1">One
-                <input type="radio" value="xyz" name="radio3">
+                <input type="radio" value="One" name="radio3">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" value="xyz" name="radio3">
+                <input type="radio" value="Two" name="radio3">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" value="xyz" name="radio3">
+                <input type="radio" value="Three" name="radio3">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" value="xyz" name="radio3">
+                <input type="radio" value="Four" name="radio3">
                 <span class="checkmark"></span>
               </label>
             </div>
 
             <div class="box" id="box4">
-              <p>4) Select the choice you want for this question</p>
+              <p>4) Please rate College Hostel facilities</p>
               <label class="container1">One
-                <input type="radio" value="xyz" name="radio4">
+                <input type="radio" value="One" name="radio4">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" value="xyz" name="radio4">
+                <input type="radio" value="Two" name="radio4">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" value="xyz" name="radio4">
+                <input type="radio" value="Three" name="radio4">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" value="xyz" name="radio4">
+                <input type="radio" value="Four" name="radio4">
                 <span class="checkmark"></span>
               </label>
             </div>
 
             <div class="box" id="box5">
-              <p>5) Select the choice you want for this question</p>
+              <p>5) Please rate College Academic faculties</p>
               <label class="container1">One
-                <input type="radio" value="xyz" name="radio5">
+                <input type="radio" value="One" name="radio5">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Two
-                <input type="radio" value="xyz" name="radio5">
+                <input type="radio" value="Two" name="radio5">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Three
-                <input type="radio" value="xyz" name="radio5">
+                <input type="radio" value="Three" name="radio5">
                 <span class="checkmark"></span>
               </label>
               <label class="container1">Four
-                <input type="radio" value="xyz" name="radio5">
+                <input type="radio" value="Four" name="radio5">
                 <span class="checkmark"></span>
               </label>
             </div>

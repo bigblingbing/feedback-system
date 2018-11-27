@@ -68,27 +68,27 @@
                 echo " reviews</h5>";
 
                 echo "<p class=''>";
-                echo "<p>1) Select the choice you want for this question</p>";
+                echo "<p>1) Please rate College Library facilities</p>";
                 echo $row['q1'];
                 echo "</p>";
 
                 echo "<p class=''>";
-                echo "<p>1) Select the choice you want for this question</p>";
+                echo "<p>2) Please rate College Lab facilities</p>";
                 echo $row['q2'];
                 echo "</p>";
 
                 echo "<p class=''>";
-                echo "<p>1) Select the choice you want for this question</p>";
+                echo "<p>3) Please rate College Internet facilities</p>";
                 echo $row['q3'];
                 echo "</p>";
 
                 echo "<p class=''>";
-                echo "<p>1) Select the choice you want for this question</p>";
+                echo "<p>4) Please rate College Hostel facilities</p>";
                 echo $row['q4'];
                 echo "</p>";
 
                 echo "<p class=''>";
-                echo "<p>1) Select the choice you want for this question</p>";
+                echo "<p>5) Please rate College Academic faculties</p>";
                 echo $row['q5'];
                 echo "</p>";
 
