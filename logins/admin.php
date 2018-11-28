@@ -13,15 +13,14 @@ if(!$connect)
 else
     echo"connected";
 
-if(isset($_SESSION['use']))   // Checking whether the session is already there or not if
+/*if(isset($_SESSION['use']))   // Checking whether the session is already there or not if
                                       // true then header redirect it to the home page directly
          {
             header("Location:result.php");
-         }
+         }*/
 $name=$_POST["name"];
 $pass=$_POST["pass"];
 
-echo $name." ".$pass;
 
 $query = "SELECT id FROM admin WHERE id = '$name' AND password = '$pass'";// AND password = $userPass";
 
@@ -36,12 +35,15 @@ $result = mysqli_query( $connect, $query);
 echo $result;
 
 */
+$message="wrong userid or password";
 $loggedIn = false;
 $row = mysqli_fetch_array($result);
 
        if(!$row){
            echo "<div>";
-           echo "No existing user or wrong password.";
+           echo "<script type='text/javascript'>alert('$message');
+           window.location.href='admin-login.html';
+           </script>";
            echo "</div>";
        }
        else {
