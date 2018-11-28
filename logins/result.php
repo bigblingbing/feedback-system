@@ -108,6 +108,13 @@
         ?>
       </div>
     </div>
-
+    <div class="delete">
+      <form method="post" action="delete.php">
+        <center>
+          <span class="submit"><button class="btn-floating btn-sm btn-tw" type="submit"><i class="fa fa-trash-o" aria-hidden="true"></i>
+            </button></span>
+        </center>
+      </form>
+    </div>
   </body>
 </html>
