@@ -2,7 +2,6 @@ body{
   font-family: 'Nunito', sans-serif;
 /*  background-color: #ea4335;*/
 background-color: white;
-
 }
 .container1 {
     display: block;
@@ -23,6 +22,7 @@ background-color: white;
   padding: 20px;
   border-radius: 8px;
   background-color: white;
+
 }
 /* Hide the browser's default radio button */
 .container1 input {
@@ -70,17 +70,30 @@ color: #4285F4;
 }
 
 .submit button{
-  background: none;
+  background:none;
   border: none;
   height: 70px;
   width: 70px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  border-radius: 50%;
   margin-bottom: 15px;
-  color: #4285F4;
+  color: #ea4335;
   align-self: center;
+}
+.submit button:hover{
+  cursor: pointer;
+}
+.fa{
+  font-size: 50px;
 }
 
 .heading{
   color: #4285F4;
+}
+
+#head{
+  text-decoration: underline;
+  margin-top: 80px;
+}
+.right{
+color: #4285F4;
+margin-bottom: 40px;
 }
