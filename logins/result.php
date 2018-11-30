@@ -36,7 +36,7 @@
           <div class="main-form">
             <div class="nav">
               <h2 class="left">Welcome Admin!</h2>
-              <h2 class="right"><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a></h2>
+              <h3 class="right"><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i></i></a></h3>
             </div>
           </div>
         </div>
@@ -111,6 +111,8 @@
     <div class="delete">
       <form method="post" action="delete.php">
         <center>
+          <span class="submit"><button class="btn-floating btn-sm btn-tw"><a href="./stats.php"><i class="fa fa-line-chart" aria-hidden="true"></i></a>
+            </button></span>
           <span class="submit"><button class="btn-floating btn-sm btn-tw" type="submit"><i class="fa fa-trash-o" aria-hidden="true"></i>
             </button></span>
         </center>
