@@ -13,7 +13,7 @@
     <!-- Material Design Bootstrap -->
     <link href="../assets/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="form.css" rel="stylesheet">
+    <link href="for.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="result.css" rel="stylesheet">
 
@@ -32,77 +32,91 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-10 offset-md-1 col-sm-12">
+        <div class="col-md-9 offset-md-1 col-sm-12">
           <div class="main-form">
             <div class="nav">
               <h2 class="left">Welcome Admin!</h2>
-              <h2 class="right"><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a></h2>
+              <h3 class="right"><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i></i></a></h3>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <?php
-      $servername="localhost";
-      $username="root";
-      $password="";
-      $dbname="login";
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-sm-12">
+        <?php
+          $servername="localhost";
+          $username="root";
+          $password="";
+          $dbname="login";
 
-      $connect=new mysqli($servername,$username,$password, $dbname);//Connection to DB
+          $connect=new mysqli($servername,$username,$password, $dbname);//Connection to DB
 
-      if(!$connect)
-          die("Connection failed:".mysql_error);
-      else
-        //  echo"connected";
-      //$ret=$_POST["rcid"];
+          if(!$connect)
+              die("Connection failed:".mysql_error);
+          else
+            //  echo"connected";
+          //$ret=$_POST["rcid"];
 
-      $sql="SELECT * FROM forms";
+          $sql="SELECT * FROM forms";
 
-      $result = $connect->query($sql);
+          $result = $connect->query($sql);
 
-      if (mysqli_num_rows($result) > 0) {
-          while($row = $result->fetch_assoc()) {
-              echo "<div class='box' id='box1'>";
-                echo "<h5 class='heading'>";
-                echo $row['name']."'s";
-                echo " reviews</h5>";
+          if (mysqli_num_rows($result) > 0) {
+              while($row = $result->fetch_assoc()) {
+                  echo "<div class='box' id='box1'>";
+                    echo "<h5 class='heading'>";
+                    echo $row['name']."'s";
+                    echo " reviews</h5>";
 
-                echo "<p class=''>";
-                echo "<p>1) Please rate College Library facilities</p>";
-                echo $row['q1'];
-                echo "</p>";
+                    echo "<p class=''>";
+                    echo "<span>1) Please rate College Library facilities</span><br/>";
+                    echo $row['q1'];
+                    echo "</p>";
 
-                echo "<p class=''>";
-                echo "<p>2) Please rate College Lab facilities</p>";
-                echo $row['q2'];
-                echo "</p>";
+                    echo "<p class=''>";
+                    echo "<span>2) Please rate College Lab facilitie<span></br/>";
+                    echo $row['q2'];
+                    echo "</p>";
 
-                echo "<p class=''>";
-                echo "<p>3) Please rate College Internet facilities</p>";
-                echo $row['q3'];
-                echo "</p>";
+                    echo "<p class=''>";
+                    echo "<span>3) Please rate College Internet facilitie<span></br/>";
+                    echo $row['q3'];
+                    echo "</p>";
 
-                echo "<p class=''>";
-                echo "<p>4) Please rate College Hostel facilities</p>";
-                echo $row['q4'];
-                echo "</p>";
+                    echo "<p class=''>";
+                    echo "<span>4) Please rate College Hostel facilitie<span></br/>";
+                    echo $row['q4'];
+                    echo "</p>";
 
-                echo "<p class=''>";
-                echo "<p>5) Please rate College Academic faculties</p>";
-                echo $row['q5'];
-                echo "</p>";
+                    echo "<p class=''>";
+                    echo "<span>5) Please rate College Academic facultie<span></br/>";
+                    echo $row['q5'];
+                    echo "</p>";
 
-                echo "<p class=''>";
-                echo "<p>6) reviews</p>";
-                echo $row['review'];
-                echo "</p>";
+                    echo "<p class=''>";
+                    echo "<span>6) review<span></br/>";
+                    echo $row['review'];
+                    echo "</p>";
 
-              echo "</div>";
+                  echo "</div>";
 
+              }
+          } else {
+              echo "No results found";
           }
-      } else {
-          echo "No results found";
-      }
-    ?>
+        ?>
+      </div>
+    </div>
+    <div class="delete">
+      <form method="post" action="delete.php">
+        <center>
+          <span class="submit"><button class="btn-floating btn-sm btn-tw"><a href="./stats.php"><i class="fa fa-line-chart" aria-hidden="true"></i></a>
+            </button></span>
+          <span class="submit"><button class="btn-floating btn-sm btn-tw" type="submit"><i class="fa fa-trash-o" aria-hidden="true"></i>
+            </button></span>
+        </center>
+      </form>
+    </div>
   </body>
 </html>

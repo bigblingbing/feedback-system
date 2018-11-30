@@ -25,11 +25,11 @@
              header("Location:../logins/student-login.php");
          }
 
-            echo $_SESSION['use'];
+            //echo $_SESSION['use'];
 
-            echo "Login Success";
+          //  echo "Login Success";
 
-            echo "<a href='logout.php'> Logout</a> ";
+          //  echo "<a href='logout.php'> Logout</a> ";
   ?>
 
   <div class="container">
@@ -38,12 +38,12 @@
         <div class="main-form">
           <div class="nav">
             <h2 class="left">Feedback Form</h2>
-            <h2 class="right"><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a></h2>
+            <h3 class="right"><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i></i></a></h3>
           </div>
 
           <form method="post" action="form-store.php">
             <div class="row">
-              <div class="col-md-4 ml-auto mr-auto col-sm-12">
+              <div class="col-md-4 ml-auto mr-auto col-sm-6">
                 <div class="md-form" id="name">
                   <i class="fa fa-user prefix"></i>
                   <input type="text" id="inputIconEx2" class="form-control" name="name">
