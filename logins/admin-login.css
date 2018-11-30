@@ -128,4 +128,9 @@ div[class="md-form"]{
     margin-bottom: 40px;
     margin-left: 40px;
   }
+}
+
+ a{
+   padding-top: 40px;
+   color: #db3236;
  }

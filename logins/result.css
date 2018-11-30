@@ -1,7 +1,7 @@
 body{
   font-family: 'Nunito', sans-serif;
 /*  background-color: #ea4335;*/
-background-color: yellow;
+background-color: white;
 }
 .container1 {
     display: block;
@@ -82,7 +82,7 @@ color: #4285F4;
   cursor: pointer;
 }
 .fa{
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .heading{
