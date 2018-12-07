@@ -51,8 +51,11 @@ echo $result;
            // code into the condition later
            echo "<script>alert("."Submitted Sucessfully".")</script>";
            $loggedIn = true;
-           header('Location: ../index.html');
-           exit;
+           session_start();
+
+            echo "Logout Successfully ";
+            session_destroy();   // function that Destroys Session
+            header("Location: ../index.html");
        }
 
 
