@@ -141,7 +141,9 @@
         ?>
         <div>
           <center>
-            <h3 class="right"><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i></i></a></h3>
+            <form class="" action="logout.php" method="post">
+              <h3 class="right"><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i></i></a></h3>
+            </form>
           </center>
         </div>
 
